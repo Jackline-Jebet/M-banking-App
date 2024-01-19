@@ -1,0 +1,106 @@
+.login {
+width: 100%;
+height: 97vh;
+background-color: rgba(12, 12, 12, 0.2);
+background: linear-gradient(45deg, #faf7f7, #e65015ef );
+backdrop-filter: blur(10px);
+border: 1px solid rgba(0, 0, 0, 0.18);
+display: flex;
+align-items: center;
+border-radius: 10px;
+
+}
+
+.login-form {
+  width: 89%;
+  display: flex;
+  flex-direction: column;
+  height: 73vh;
+  background: linear-gradient(45deg, #0ef7f7, #e65015ef );
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+h2 {
+  margin-bottom: 30px;
+  margin-top: -10px;
+  font-size: 30px;
+}
+
+.label-1 {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.label-1 input {
+  width: 140px;
+  margin-left: 12px;
+  border-radius: 2px;
+  border: none;
+}
+
+.label-2 {
+  display: flex;
+  
+}
+
+.label-2 input {
+  width: 140px;
+  margin-left: 35px;
+  border-radius: 2px;
+  border: none;
+}
+
+.button {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 92px;
+}
+
+.btn-sub {
+  font-size: 15px;
+  border-radius: 2px;
+  border: none;
+  width: 80px;
+}
+
+.login-form .btn {
+  border-radius: 2px;
+  border: none;
+  width: 80px;
+  height: 20px;
+  margin-top: 10px;
+  margin-left: 0.1vw;
+}
+
+
+
+@media (max-width: 768px) {
+ .login {
+  width: 100%;
+  height: 97vh;
+  margin-top: 0;
+ }
+
+ .login-form {
+  width: 90%;
+  height:92vh;
+  margin-bottom: 15px;
+ }
+
+ .login-form .btn {
+  margin-left: -1vw;
+  width: 50px;
+ }
+
+ .button {
+  margin-right: 32px;
+  margin-left: -6px;
+ }
+
+}
