@@ -32,6 +32,7 @@
 display: flex;
 flex-direction: column;
 width: 155px;
+margin-bottom: 28px;
 }
 
 .service-btn button {
@@ -44,12 +45,17 @@ width: 155px;
   /* background: none; */
 }
 
+.service-btn button:hover {
+  color: white;
+  background-color: #0b0325;;
+}
+
 
 
 @media (max-width: 768px) {
   .services {
     width: 100%;
-    height: 97vh;
+    height: 96vh;
     margin-top: 0;
   }
 

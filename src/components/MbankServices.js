@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "../styles/MbankServices.css";
 import Logo from "../images/logo rm.png";
+// import DepositForm from './DepositForm';
+// import BalanceEnq from './BalanceEnq';
 
 const MbankServices = ()  => {
   const navigate = useNavigate();
 
-  const handleDeposit = () => {
+  // eslint-disable-next-line no-unused-vars
+  const [balance, setBalance] = useState(0);
+  const [depositedAmount, setDepositedAmount] = useState(0);
+
+
+  const handleDeposit = (amount) => {
+    setDepositedAmount(amount);
+    setBalance((prevBalance) => prevBalance + amount);
     navigate('/deposit')
     console.log('Deposit service clicked');
   };
 
   const handleBalanceEnquiry = () => {
+    // setShowDepositForm(false);
     navigate('/balance')
     console.log('Balance Enquiry service clicked');
   };
@@ -32,7 +42,7 @@ const MbankServices = ()  => {
   };
 
   const handleBack = () => {
-    navigate('/login'); // Navigate back one step in the history
+    navigate('/login');
   };
 
   return (
@@ -40,6 +50,18 @@ const MbankServices = ()  => {
       <div className='mbank-services'>
       <img src={Logo} alt='logo' />
         <h2>M-Bank Services</h2>
+
+        {/* <DepositForm onDeposit={handleDeposit} /> */}
+        {depositedAmount > 0 && (
+          <p>You have Deposited ksh {depositedAmount} to your account.</p>
+        )}
+        {/* <BalanceEnq balance={balance} onBalanceEnq={handleBalanceEnquiry} /> */}
+        
+        {/* {showDepositForm ? (
+          <DepositForm updateBalance={(amount) => setBalance((prevBalance) => prevBalance + amount)} />
+        ) : (
+          <BalanceEnq initialBalance={balance} />
+        )} */}
       
       <div className='service-btn'>
         <button type="button" onClick={handleDeposit}>Deposit</button>

@@ -33,13 +33,14 @@
 }
 
 .amount-label input {
-  width: 70px;
+  width: 82px;
   margin-bottom: 40px;
   margin-left: 14px;
+  font-size: 17px;
 }
 
 .amount-label {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .deposit-btn {
@@ -48,10 +49,27 @@
   margin-left: 8px;
 }
 
+.deposit-btn button {
+  font-size: 19px;
+  border: none;
+  transform: transition 0.3s ease;
+}
+
+.deposit-btn button:hover{
+  color: white;
+  background-color: #0b0325;
+  border: none;
+}
+
+.deposit-message {
+  color: green;
+  /* font-weight: 500; */
+}
+
 @media (max-width: 768px) {
   .deposit {
     width: 100%;
-    height: 97vh;
+    height: 96vh;
     margin-top: 0;
   }
 
