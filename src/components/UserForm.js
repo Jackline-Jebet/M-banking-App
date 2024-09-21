@@ -28,6 +28,8 @@ const UserForm = () => {
         pin,
       });
 
+      console.log('API response:', response);
+
       if (response && response.data) {
       const token = response.data.token;
 
