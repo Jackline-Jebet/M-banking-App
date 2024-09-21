@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
+import './MainApp.css';
 import HomePage from './components/HomePage';
 import LoginForm from './components/LoginForm';
-import "./App.css"
+import "./MainApp.css"
 import UserForm from './components/UserForm';
 import MbankServices from './components/MbankServices';
 import DepositForm from './components/DepositForm';
