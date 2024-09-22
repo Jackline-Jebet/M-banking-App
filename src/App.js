@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './MainApp.css';
-import HomePage from './components/HomePage';
-import LoginForm from './components/LoginForm';
+import HomePage from '../api/components/HomePage';
+import LoginForm from '../api/components/LoginForm';
 import "./MainApp.css"
-import UserForm from './components/UserForm';
-import MbankServices from './components/MbankServices';
-import DepositForm from './components/DepositForm';
-import ChequeForm from './components/ChequeForm';
-import BalanceEnq from './components/BalanceEnq';
-import ChangePin from './components/ChangePin';
-import FinancialTips from './components/FinancialTips';
+import UserForm from '../api/components/UserForm';
+import MbankServices from '../api/components/MbankServices';
+import DepositForm from '../api/components/DepositForm';
+import ChequeForm from '../api/components/ChequeForm';
+import BalanceEnq from '../api/components/BalanceEnq';
+import ChangePin from '../api/components/ChangePin';
+import FinancialTips from '../api/components/FinancialTips';
 
 function App() {
   return (

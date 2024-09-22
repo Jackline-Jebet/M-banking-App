@@ -22,7 +22,7 @@ const BalanceEnq = ({ depositedAmount }) => {
         <div>
           <p>A/C No:12345678</p>
           <p>Name: Jane Ovi</p>
-          <p>Bal: ksh45000 + Deposited: {depositedAmount}</p>
+          <p>Bal: ksh45000 + 20000: {depositedAmount}</p>
         </div>
 
           <div className='balance-btn'>
